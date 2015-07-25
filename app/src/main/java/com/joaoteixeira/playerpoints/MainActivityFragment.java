@@ -1,12 +1,15 @@
 package com.joaoteixeira.playerpoints;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.joaoteixeira.entity.Player;
 
@@ -31,6 +34,16 @@ public class MainActivityFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main, container, false);
 
         this.listView = (ListView) view.findViewById(R.id.list_players);
+        this.listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                Toast.makeText(getActivity().getApplicationContext(),
+                        "Click ListItem Number " + position + " id " + id, Toast.LENGTH_SHORT)
+                        .show();
+            }
+        });
+
 
         return view;
     }
@@ -43,7 +56,7 @@ public class MainActivityFragment extends Fragment {
 
         ArrayList<String> listPlayers = new ArrayList<String>();
 
-        for(Player p: players) {
+        for (Player p : players) {
             listPlayers.add(p.getName());
         }
 

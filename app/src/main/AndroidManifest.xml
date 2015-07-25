@@ -20,7 +20,11 @@
         <activity
             android:name=".PlayerCreateActivity"
             android:label="@string/title_activity_player_create"
-            android:parentActivityName="com.joaoteixeira.playerpoints.MainActivity">
+            android:parentActivityName=".MainActivity" >
+        </activity>
+        <activity
+            android:name=".PlayerEditActivity"
+            android:label="@string/title_activity_player_edit" >
         </activity>
     </application>
 
