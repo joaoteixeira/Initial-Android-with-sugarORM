@@ -25,9 +25,11 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Salvar"
+        android:text="@string/player_btn_save"
         android:id="@+id/btnSave"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/editName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:capitalize="words" />
 
 </RelativeLayout>

@@ -31,7 +31,7 @@ public class PlayerCreateActivity extends ActionBarActivity implements View.OnCl
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_player_create, menu);
+        //getMenuInflater().inflate(R.menu.menu_player_create, menu);
         return true;
     }
 
@@ -65,7 +65,7 @@ public class PlayerCreateActivity extends ActionBarActivity implements View.OnCl
         Player player = new Player(this.editName.getText().toString());
         player.save();
 
-        Toast.makeText(getApplicationContext(), "Novo jogador adicionado", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), R.string.message_player_new, Toast.LENGTH_LONG).show();
         finish();
     }
 }

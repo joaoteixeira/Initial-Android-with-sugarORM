@@ -2,6 +2,17 @@
     <string name="app_name">PlayerPoints</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_player_new">Novo Jogador</string>
+    <string name="action_player_remove">Excluir Jogador</string>
     <string name="title_activity_player_create">Novo jogador</string>
     <string name="title_activity_player_edit">PlayerEditActivity</string>
+    <string name="player_name">Nome do jogador</string>
+    <string name="player_btn_save">Salvar</string>
+    <string name="message_player_new">Novo Jogado Adicionado</string>
+    <string name="message_player_edit">Jogador Atualizado</string>
+    <string name="message_player_remove">Jogador Excluido</string>
+
+    <string name="alert_dialog_yes">Sim</string>
+    <string name="alert_dialog_no">Não</string>
+    <string name="alert_message">Você tem certeza?</string>
 </resources>

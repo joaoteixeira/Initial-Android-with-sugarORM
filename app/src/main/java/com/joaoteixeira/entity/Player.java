@@ -7,7 +7,7 @@ import com.orm.SugarRecord;
  */
 public class Player extends SugarRecord {
 
-    String name;
+    protected String name;
 
     public Player() {
 
@@ -17,8 +17,16 @@ public class Player extends SugarRecord {
         this.name = name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getName() {
-        return this.name.toString();
+        return this.name;
+    }
+
+    public String toString() {
+        return this.name;
     }
 
 }

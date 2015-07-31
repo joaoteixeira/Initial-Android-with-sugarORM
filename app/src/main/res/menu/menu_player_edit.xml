@@ -2,6 +2,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.joaoteixeira.playerpoints.PlayerEditActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_player_remove"
+        android:orderInCategory="10"
+        android:title="@string/action_player_remove"
+        app:showAsAction="never" />
 </menu>
